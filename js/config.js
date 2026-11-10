@@ -20,7 +20,7 @@ const CONFIG = {
   // Lista de cartas. "nombre" es lo que aparece en la lista, "fecha" es opcional.
   // "archivo" es el .txt con el texto (párrafos separados por una línea en blanco).
   cartas: [
-    { nombre: "Primera Cartita", fecha: "10 de Noviembre", archivo: "cartas/cumple2026.txt" },
+    { nombre: "Primera Cartita de Cumpleaños", fecha: "10 de Noviembre", archivo: "cartas/cumple2026.txt" },
     { nombre: "Otra carta (ejemplo)", fecha: "Pronto", archivo: "cartas/ejemplo.txt" }
   ],
 
