@@ -70,7 +70,7 @@ CONFIG.cartas.forEach((c, i) => {
 });
 
 /* ---------- Una carta (lee el .txt y la escribe poco a poco) ---------- */
-$("#firma").textContent = "Con todo mi amor, " + CONFIG.tuNombre + " ♥";
+$("#firma").textContent = "Atentamente, " + CONFIG.tuNombre;
 
 let token = 0, parrafos = [], saltar = false;
 
