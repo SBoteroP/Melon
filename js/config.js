@@ -24,6 +24,14 @@ const CONFIG = {
     { nombre: "Otra carta (ejemplo)", fecha: "Pronto", archivo: "cartas/ejemplo.txt" }
   ],
 
+  // Pie de página y detallitos escondidos
+  pie: {
+    desde: "2023-10-24",
+    texto: "Amándonos desde el 24 de octubre de 2023, y lo que falte",
+    // Título de la pestaña cuando te vas de la página
+    tituloAusente: "Vuelve, te extraño 🥺"
+  },
+
   // Opciones del home
   opciones: [
     { id: "cartas",    emoji: "💌", titulo: "Cartas" },

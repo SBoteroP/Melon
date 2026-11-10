@@ -127,3 +127,8 @@ main{max-width:900px;margin:0 auto;padding:1.5rem 1rem}
 .volver{max-width:640px;margin:0 auto .8rem}
 .volver a{color:var(--rojo);text-decoration:none}
 .volver a:hover{text-decoration:underline}
+
+/* Pie */
+.pie{text-align:center;padding:1rem 1rem 2rem;font-size:.85rem;color:var(--tinta);opacity:.7}
+.pie p{margin:.1rem 0}
+.pie-dias{font-size:.72rem;opacity:.7}

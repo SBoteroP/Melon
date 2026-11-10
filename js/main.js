@@ -122,6 +122,31 @@ async function abrirCarta(i) {
 }
 $("#saltar").addEventListener("click", () => { saltar = true; if (parrafos.length) mostrarTodo(token); });
 
+/* ---------- Pie y detallitos escondidos ---------- */
+function lluvia(n = 25) {
+  for (let i = 0; i < n; i++) setTimeout(() => corazon(Math.random() * innerWidth, innerHeight - 20, Math.random() < .5 ? "💗" : "🍈"), i * 80);
+}
+
+const desde = new Date(CONFIG.pie.desde + "T00:00:00");
+$("#pieDesde").textContent = CONFIG.pie.texto;
+function dias() {
+  const n = Math.max(0, Math.floor((Date.now() - desde) / 86400000));
+  $("#pieDias").textContent = `(${n.toLocaleString("es")} días y contando)`;
+}
+dias(); setInterval(dias, 60000);
+
+// Tocar 5 veces el gif del inicio: solo llueven corazones
+let toques = 0;
+$("#heroGif").addEventListener("click", () => {
+  if (++toques === 5) { toques = 0; lluvia(); }
+});
+
+// Título de la pestaña cuando te vas
+const tituloOriginal = document.title;
+document.addEventListener("visibilitychange", () => {
+  document.title = document.hidden ? CONFIG.pie.tituloAusente : tituloOriginal;
+});
+
 /* ---------- Música ---------- */
 const audio = new Audio(CONFIG.musica); audio.loop = true;
 $("#musica").addEventListener("click", async e => {
