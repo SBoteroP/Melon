@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Corazón de Melón</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="barra">
+  <a class="logo mano" href="#inicio">🍈 Corazón de Melón</a>
+  <button id="burger" class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+  <nav id="menu" class="menu" aria-label="Menú principal">
+    <a href="#inicio" data-sec="inicio">Inicio</a>
+    <a href="#cartas" data-sec="cartas">Cartas</a>
+    <a href="#recuerdos" data-sec="recuerdos">Recuerdos</a>
+    <a href="#sorpresas" data-sec="sorpresas">Sorpresas</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INICIO -->
+  <section id="inicio" class="seccion">
+    <div class="hero">
+      <div class="gifbox" id="heroGif"></div>
+      <h1 class="mano" id="heroTitulo"></h1>
+      <p class="mano sub" id="heroSub"></p>
+      <div class="opciones-home" id="opcionesHome"></div>
+    </div>
+  </section>
+
+  <!-- LISTA DE CARTAS -->
+  <section id="cartas" class="seccion oculto">
+    <h2 class="titulo mano">Cartas</h2>
+    <p class="centro suave">Elige una para leerla.</p>
+    <div class="lista-cartas" id="listaCartas"></div>
+  </section>
+
+  <!-- UNA CARTA -->
+  <section id="carta" class="seccion oculto">
+    <p class="volver"><a href="#cartas">← Todas las cartas</a></p>
+    <article class="papel">
+      <p class="dedic mano" id="dedicatoria"></p>
+      <h2 class="mano" id="cartaTitulo"></h2>
+      <div id="texto"></div>
+      <div class="firma mano oculto" id="firma"></div>
+    </article>
+    <div class="centro"><button id="saltar">Mostrar todo el texto</button></div>
+  </section>
+
+  <!-- VACÍAS (se llenan después) -->
+  <section id="recuerdos" class="seccion oculto">
+    <h2 class="titulo mano">Recuerdos</h2>
+    <p class="vacio mano">Próximamente… 🍈</p>
+  </section>
+
+  <section id="sorpresas" class="seccion oculto">
+    <h2 class="titulo mano">Sorpresas</h2>
+    <p class="vacio mano">Próximamente… 🍈</p>
+  </section>
+</main>
+
+<button id="musica" aria-label="Reproducir o pausar música">🎵</button>
+<div id="aviso" class="oculto" role="status"></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
