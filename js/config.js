@@ -8,19 +8,19 @@ const CONFIG = {
   musica: "assets/cancion.mp3",
 
   inicio: {
-    titulo: "Corazón de Melón",
+    titulo: "Meine Mauschen",
     sub: "Un huequito de internet solo para ti",
     gif: "assets/cat.gif",   // si no existe, se muestra el emoji
     emoji: "🍈"
   },
 
   // Dedicatoria por defecto de las cartas (cada carta puede tener la suya)
-  dedicatoria: "Para el amor de mi vida. 💗",
+  dedicatoria: "Para el amor de mi vida 💗",
 
   // Lista de cartas. "nombre" es lo que aparece en la lista, "fecha" es opcional.
   // "archivo" es el .txt con el texto (párrafos separados por una línea en blanco).
   cartas: [
-    { nombre: "Primera Cartita Olaaaa", fecha: "10 de Noviembre", archivo: "cartas/cumple2026.txt" },
+    { nombre: "Primera Cartita", fecha: "10 de Noviembre", archivo: "cartas/cumple2026.txt" },
     { nombre: "Otra carta (ejemplo)", fecha: "Pronto", archivo: "cartas/ejemplo.txt" }
   ],
 
